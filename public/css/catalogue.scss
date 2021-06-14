@@ -1,0 +1,227 @@
+.scj-catalogue{
+	border-bottom: 1px solid #d4d1d1;
+	padding-bottom: 30px;
+	.catalogue-menu{
+		padding-bottom: 15px;
+		.catalogue-menu-item{
+			border-bottom: 1px solid #dedbdb;
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			&:last-child{
+				border: none;
+				padding: 0;
+				margin-bottom: 0;
+			}
+			.view-all {
+				transition: 0.4s;
+				display: flex;
+				padding: 0;
+				margin-top: 10px;
+				color: #464545;
+				font-size: 13px;
+				align-items: center;
+				i{
+					margin-left: 5px;
+				}
+				&:hover{
+					color: #e84249;
+				}
+			}
+			.catalogue-parent-title{
+				font-size: 13px;
+				color: #403f3f;
+				margin: 10px 0;
+			}
+			.catalogue-list{
+				.catalogue-title{
+					padding-left: 10px;
+					font-size: 13px;
+					font-weight: bold;
+					margin-bottom: 0;
+				}
+				.catalogue-item{
+					margin: 5px 0;
+					.catalogue-link{
+						font-size: 13px;
+						text-transform: capitalize;
+						display: flex;
+						align-items: center;
+						padding: 0 0 0 20px;
+						transition: 0.4s;
+						color: #5f5f5f;
+						i{
+							margin-right: 5px;
+							opacity: 0;
+							font-size: 10px;
+							font-weight: 900;
+							position: relative;
+							top: -1px;
+						}
+						&.active{
+							i{
+								opacity: 1;
+							}
+						}
+						&:hover{
+							color: #e84249;
+						}
+					}
+				}
+			}
+			.catalogue-menu-label{
+				margin-bottom: 0px;
+				font-size: 13px;
+				text-transform: uppercase;
+				color: #353434;
+				font-weight: 500;
+			}
+			.menu-price-form{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin: 10px 0;
+				input{
+					width: 75px;
+					padding: 3px 0 3px 5px;
+					text-transform: capitalize;
+					font-size: 13px;
+					border-radius: 0;
+					border: 1px solid #c1bebe;
+					color: #211f1f;
+					outline: none;
+				}
+				i{
+					font-size: 16px;
+					font-weight: 400;
+				}
+			}
+			.menu-price-btn{
+				display: block;
+				padding: 0 0 ;
+			}
+			.scj-brand-list{
+				padding: 0 10px;
+				margin-top: 10px;
+				.scj-brand-item{
+					margin-bottom: 10px;
+					.scj-brand-label{
+						font-size: 13px;
+						color: black;
+						display: flex;
+						align-items: center;
+						&.name_brand{
+							color: #e84249;
+						}
+						.scj-brand-choose{
+							margin-right: 10px;
+							width: 20px;
+							height: 20px;
+							border: 1px solid #d2cbcb;
+							background-color: white;
+							border-radius: 0;
+							cursor: pointer;
+							&.choose{
+								position: relative;
+								color: #e84249;
+								&:after{
+									position: absolute;
+									content: "\2713";
+									width: 20px;
+									height: 20px;
+									border: 1px solid #e84249;
+									background-color: white;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									font-size: 16px;
+									color: #e84249;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.catalogue-content{
+		width: 800px;
+		.catalogue-sort{
+			display: flex;
+			align-items: center;
+			background-color: gold;
+			padding: 5px 0 5px 10px;
+			.catalogue-sort-label{
+				font-size: 13px;
+				margin-bottom: 0;
+				color: #100f0f;
+				font-weight: 600;
+				display: inline-block;
+			}
+			.catalogue-sort-item{
+				float: left;
+				position: relative;
+				&:after{
+					position: absolute;
+					content: "";
+					width: 1px;
+					height: 50%;
+					background-color: #8a8a8a;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				.catalogue-sort-link {
+					text-transform: uppercase;
+					color: black;
+					font-size: 14px;
+					transition: 0.4s;
+					position: relative;
+					margin: 0 10px;
+					&.active{
+						font-weight: bold;
+						position: relative;
+						&:after{
+							position: absolute;
+							content: "";
+							width: 100%;
+							height: 3px;
+							background-color: #e84249;
+							bottom: -5px;
+							left: 0;
+						}
+					}
+					&:hover{
+						color: #e84249;
+						&:after{
+							position: absolute;
+							content: "";
+							width: 100%;
+							height: 3px;
+							background-color: #e84249;
+							bottom: -5px;
+							left: 0;
+						}
+					}
+				}
+			}
+		}
+		.catalogue-product-list{
+			margin-top: 20px;
+			.scj-product-item{
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'general';
